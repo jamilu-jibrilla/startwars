@@ -1,6 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Navbar";
 import People from "./components/People";
+import Home from "./Home";
+import Planets from "./components/Planets";
 import { Component } from "react";
 class App extends Component {
   constructor() {
@@ -35,8 +38,17 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <People people={this.state.people} />
-        {/* <Planet planets={this.state.planets} /> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            path="/People"
+            element={<People people={this.state.people} />}
+          />
+          <Route
+            path="/Planets"
+            element={<Planets planets={this.state.planets} />}
+          />
+        </Routes>
       </div>
     );
   }

@@ -1,0 +1,12 @@
+.Card2 {
+  background-color: white;
+  margin: 24px;
+  width: 350px;
+  padding: 10px;
+}
+h4 {
+  margin-bottom: 20px;
+}
+h4:first-child {
+  font-size: 1.5em;
+}
