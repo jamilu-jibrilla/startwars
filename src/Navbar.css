@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+}
+ul {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+li {
+  list-style: none;
+  margin: 0px 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+li:first-child {
+  color: red;
+  font-size: 3em;
+}
+.left {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 500px) {
+  li,
+  li:first-child {
+    font-size: 1em;
+    margin: 0px 7px;
+  }
+  ul {
+    padding: 22px;
+  }
+}
